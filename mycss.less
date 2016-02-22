@@ -4,14 +4,10 @@
 @colorchapeau : #4fd0e6;
 @fontfa : arial;
 
-@font-size-root : 16 px;
-@device-width-medium : unit((1024px/ @font-size-root), em);
-@device-width-large : unit ((1280px/ @font-size-root), em);
-
 
 /* ------------------------------------------- */
 /*ecran*/
-@media screen and (min-width : @device-width-large) {
+
 body {
 
 
@@ -71,11 +67,9 @@ a:hover
 
 a:active
 {color:#4fd0e6;}
-}
 
 /* ------------------------------------------- */
 /*tablette*/
-@media screen and (min-width : @device-width-medium) and (max-width : @device-width-large) {
 body {
 
 
@@ -135,22 +129,22 @@ a:hover
 
 a:active
 {color:#4fd0e6;}
-}
+
 
 /* ------------------------------------------- */
 
 /*tel*/
-@media screen and (max-width : @device-width-medium) {
+
 
 body {
 
 
-margin-left: 40%;
+margin-left: 20%;
 margin-right: 20%;
-font-size: 1.2em;
+font-size: 1em;
 font-family: @fontfa
-/*background-color: black;*/
-color: red;
+/*background-color: black;
+color: white;*/
 }
 
 #chapeau {
@@ -200,6 +194,4 @@ a:hover
 {color:#4fd0e6;}
 
 a:active
-
-}
 {color:#4fd0e6;}

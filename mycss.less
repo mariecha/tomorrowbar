@@ -4,10 +4,14 @@
 @colorchapeau : #4fd0e6;
 @fontfa : arial;
 
+@font-size-root : 16 px;
+@device-width-medium : unit((1024px/ @font-size-root), em);
+@device-width-large : unit ((1280px/ @font-size-root), em);
+
 
 /* ------------------------------------------- */
 /*ecran*/
-
+@media screen and (min-width : @device-width-large) {
 body {
 
 
@@ -67,9 +71,11 @@ a:hover
 
 a:active
 {color:#4fd0e6;}
+}
 
 /* ------------------------------------------- */
 /*tablette*/
+@media screen and (min-width : @device-width-medium) and (max-width : @device-width-large) {
 body {
 
 
@@ -134,7 +140,7 @@ a:active
 /* ------------------------------------------- */
 
 /*tel*/
-
+@media screen and (max-width : @device-width-medium) {
 
 body {
 
